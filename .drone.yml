@@ -15,7 +15,7 @@ steps:
 - name: pmd
   image: rawdee/pmd
   commands:
-  - pmd -d src/main/java -f text -R pmd_rulset.xml -language java
+  - pmd -d src/main/java -f text -R pmd_ruleset.xml -language java
 - name: publish
   image: plugins/docker
   settings:
